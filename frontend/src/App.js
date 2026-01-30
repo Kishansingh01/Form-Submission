@@ -23,7 +23,7 @@ function App() {
     try {
       console.log("Till axios it is coming");
       // await axios.post("http://localhost:5000/api/form", formData);
-      await axios.post("https://form-submission-3.onrender.com//api/form", formData);
+      await axios.post("https://form-submission-3.onrender.com/api/form", formData);
 
 
       alert("Form submitted successfully and it has connected to frontend and backend");
