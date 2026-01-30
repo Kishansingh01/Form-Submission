@@ -19,18 +19,18 @@ function App() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
     try {
       console.log("Till axios it is coming");
       await axios.post("http://localhost:5000/api/form", formData);
-      alert("Form submitted successfully");
+      alert("Form submitted successfully and it has connected to frontend and backend");
       setFormData({ name: "", email: "", mobile: "", date: "" });
     }catch (error) {
           console.error(error);
           alert(error.response?.data?.error || "Error submitting form");
         }
   };
-
+       
   return (
     <div className="form-wrapper">
       <h2>Registration Form</h2>
